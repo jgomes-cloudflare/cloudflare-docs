@@ -13,15 +13,16 @@ Gateway applies HTTP policies to HTTP/3 traffic last. For more information, refe
 
 ## Enable HTTP/3 inspection
 
-To enable HTTP/3 inspection:
+To enable HTTP/3 inspection, turn on the Gateway proxy for UDP:
 
 1. In [Zero Trust](https://one.dash.cloudflare.com), go to **Settings** > **Network**.
-2. Under **Firewall**, enable **Proxy** and select **UDP**.
-3. Enable **TLS decryption**.
+2. Under **Firewall**, turn on **Proxy**.
+3. Select **TCP** and **UDP**.
+4. Turn on **TLS decryption**.
 
 ### Application limitations
 
-Gateway can inspect HTTP/3 traffic from Microsoft Edge, as well as other HTTP applications, such as cURL.
+Gateway can inspect HTTP/3 traffic from Mozilla Firefox and Microsoft Edge, as well as other HTTP applications, such as cURL.
 
 By default, the following browsers do not support HTTP/3 inspection unless you [disable QUIC](#prevent-inspection-bypass):
 
