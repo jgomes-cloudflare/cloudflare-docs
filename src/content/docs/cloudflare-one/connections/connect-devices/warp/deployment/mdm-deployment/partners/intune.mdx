@@ -70,13 +70,16 @@ Intune allows you to insert [predefined variables](https://learn.microsoft.com/e
                                 "key": "organization",
                                 "valueString": "your-team-name"
                             },
+														{
+																"key": "display_name",
+																"valueString": "Production environment"
+                        		},
                             {
                                 "key": "service_mode",
                                 "valueString": "warp"
                             },
                             {
                                 "key": "onboarding",
-
                                 "valueBool": false
                             },
                             {
@@ -84,7 +87,19 @@ Intune allows you to insert [predefined variables](https://learn.microsoft.com/e
                                 "valueString": "https://support.example.com/"
                             }
                         ]
-                    }
+                    },
+										{
+												"managedProperty": [
+														{
+																"key": "organization",
+																"valueString": "test-org"
+														},
+														{
+																"key": "display_name",
+																"valueString": "Test environment"
+														}
+												]
+                		}
                 ]
             }
         ]
