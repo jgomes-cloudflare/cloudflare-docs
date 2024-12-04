@@ -10,6 +10,8 @@ In addition to enforcing mTLS authentication for your host, you can also forward
 :::caution
 
 This process is only available on accounts with [Cloudflare Access](/cloudflare-one/). 
+
+The cert is only forwarded on the first request of a mTLS connection to avoid adding the cert to every single request.
 :::
 
 ### Cloudflare API
